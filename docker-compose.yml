@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  java-computation-template:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: ["java",  "-jar", "/app.jar"]
+    ports:
+      - "3011:8080"
