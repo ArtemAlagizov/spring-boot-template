@@ -1,5 +1,7 @@
 # spring-boot-template
 
+Spring boot dockerized service template with an example
+
 based on https://dzone.com/articles/spring-boot-2-restful-api-documentation-with-swagg
 
 # Usage with Docker:
