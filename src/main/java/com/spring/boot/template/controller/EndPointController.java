@@ -2,10 +2,7 @@ package com.spring.boot.template.controller;
 
 import com.spring.boot.template.model.Data;
 import com.spring.boot.template.service.JavaService;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +22,7 @@ public class EndPointController {
         this.javaService = javaService;
     }
 
-    @RequestMapping(method = RequestMethod.GET, path="/get-value")
+    @RequestMapping(method = RequestMethod.GET, path = "/get-value")
     @ResponseStatus(HttpStatus.OK)
     @ApiOperation(value = "Get calculation result", response = Data.class)
     @ApiResponses(value = {
@@ -34,11 +31,11 @@ public class EndPointController {
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
-    public Data calculate(Integer input) {
+    public Data calculate(Data input) {
         return javaService.calculate(input);
     }
 
-    @RequestMapping(method = RequestMethod.POST, path="/create-value")
+    @RequestMapping(method = RequestMethod.POST, path = "/create-value")
     @ResponseStatus(HttpStatus.CREATED)
     @ApiOperation(value = "Create calculation", response = Data.class)
     @ApiResponses(value = {
@@ -47,7 +44,7 @@ public class EndPointController {
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
-    public Data create(Integer input) {
+    public Data create(Data input) {
         return javaService.calculate(input);
     }
 }

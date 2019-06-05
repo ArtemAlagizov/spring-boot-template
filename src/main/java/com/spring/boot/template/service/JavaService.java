@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class JavaService {
-    public Data calculate(Integer parameter) {
-        Integer result = parameter * 19;
+    public Data calculate(Data input) {
+        Integer result = input.getValue() * 19;
         Data data = new Data();
 
         data.setValue(result);
