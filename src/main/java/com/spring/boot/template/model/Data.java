@@ -11,12 +11,12 @@ public class Data {
     @Setter
     @Getter
     @JsonProperty
-    @ApiModelProperty(notes = "The very important value", example = "6", required = true)
+    @ApiModelProperty(notes = "Very important value", example = "6", required = true)
     private Integer value;
 
     @Setter
     @Getter
     @JsonProperty
-    @ApiModelProperty(notes = "The very important value", example = "45", position = 1)
+    @ApiModelProperty(notes = "Very important id", example = "45", position = 1)
     private Integer id;
 }
