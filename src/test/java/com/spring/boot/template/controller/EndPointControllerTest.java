@@ -24,7 +24,6 @@ public class EndPointControllerTest {
     @Mock
     private JavaService javaService;
 
-
     @Before
     public void init() {
         MockitoAnnotations.initMocks(this);
