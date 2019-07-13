@@ -20,15 +20,15 @@ Loosely based on https://dzone.com/articles/spring-boot-2-restful-api-documentat
 * Swagger is accessible here:
    * Docker Desktop:
       ```` 
-      http://localhost:3011/swagger-ui.html/
+      http://localhost:3011/swagger-ui.html
       ````
    * Docker toolbox:
      ````
-     http://192.168.99.100:3011/swagger-ui.html/
+     http://192.168.99.100:3011/swagger-ui.html
      ````
 
 # Usage without Docker:
 * Swagger is accessible here (once the app is started):
   ````
-  http://localhost:8080/swagger-ui.html/
+  http://localhost:8080/swagger-ui.html
   ````
